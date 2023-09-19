@@ -8,7 +8,7 @@ function Card({image, id, name ,info,price,removeTourHandler}) {
 
 
   return (
-    <div className='h-[500px]  flex flex-wrap flex-col justify-center items-center gap-3 rounded-lg shadow-2xl ml-2'>
+    <div className='h-[500px]  flex flex-wrap flex-col justify-center items-center gap-1 rounded-lg shadow-2xl ml-2'>
     <div className='flex flex-col justify-center items-center '>
     <img src={image} alt='' className='h-[250px] w-[350px] rounded-t-lg'/>
     </div>
@@ -16,7 +16,7 @@ function Card({image, id, name ,info,price,removeTourHandler}) {
         <h2 className='text-green-600 '> ₹ {price} </h2>
         <h2> {name}</h2>
     </div>
-    <div className='w-[350px] ml-2 font-medium mb-3 text-lg'>
+    <div className='w-[350px] ml-2 font-medium  text-lg'>
         <p> {readMore ? info.slice(0,150):info}  <span className='text-blue-700 cursor-pointer' onClick={readmoreHandler}> {readMore?"...Read More" : "show less"} </span></p>
     </div>
     <div >
