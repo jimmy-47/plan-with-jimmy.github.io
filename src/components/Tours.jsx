@@ -12,7 +12,7 @@ function Tours(props) {
        <h1 className='text-center font-bold text-xl mt-3 mb-3 border-dotted border-4 border-red-600 rounded-md w-[300px] py-3 px-3'> Plan With Jimmy </h1>
        </div>
 
-       <div>
+       <div className='flex flex-wrap gap-4 justify-center items-center'>
           {
            props.tours.map((tour)=>{
             return <Card {...tour} key={tour.id} removeTourHandler={removeTourHandler}/>
